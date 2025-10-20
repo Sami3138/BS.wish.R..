@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rafia’s Birthday Surprise 🎉</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;600;700&family=Poppins:wght@300;400;600&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg">
+        <canvas id="confetti"></canvas>
+        <div class="hearts" aria-hidden="true"></div>
+    </div>
+
+    <main class="container">
+        <!-- Gate -->
+        <section id="gate" class="card show">
+            <h1 class="title glow">🎂 Happy Birthday</h1>
+            <p class="subtitle">Enter the secret name to unlock your surprise ✨</p>
+            <form id="access" autocomplete="off">
+                <label for="pass" class="label">Enter Secret Name to Unlock Surprise 🎁</label>
+                <div class="row">
+                    <input id="pass" class="input" type="text" placeholder="Type here..." inputmode="latin-name" />
+                    <button class="btn" type="submit">Unlock</button>
+                </div>
+                <p class="error" id="err"></p>
+            </form>
+        </section>
+
+        <!-- Main Message -->
+        <section id="main" class="card hidden" aria-hidden="true">
+            <h2 class="bighead glow">
+              🎉 Janamdin Mubarak Ho, <span class="name" id="nameHover">Rafia Maryam</span> — My Dimple Queen 🎉
+            </h2>
+
+            <div class="block ascii">
+┃┗┛ᴀᴘᴘʏ_🎂🎆🎉  
+┃┏┓┃　🄱🄸🅁🅃🄷🄳🄰🅈 🎉🎆🎇  
+┗┛┗┛
+            </div>
+
+            <div class="block eng">
+              <p>Hope all your birthday wishes and dreams come true! 😊✨❤🎂<br/>Many many happy returns of the day 🎂🎂🎁🎉🎊</p>
+              <p>This is your special day... Happy Birthday, <span class="name">Rafia Maryam</span> — my Dimple Queen! ❤🫀<br/>I want to wish you all the love and happiness in the world 💞💞</p>
+              <p>You are the most special part of my life 🥰<br/>Words can’t explain how much I care about you ✨😔🌏<br/>You make my life perfect in every way 💋👀<br/>I don’t know what else to say — just three letters to express my love for you 😋🫀<br/>I really love you 🥺🫀🥰</p>
+              <p>I’m truly blessed to have you in my life 😍🌏❤🙈🧸🔐<br/>You are my most favorite person in this universe 🌏🔐🙈</p>
+              <p>اک نظر تجھے دیکھ لینے سے ساری دنیا حسین لگتی ہے 😩🫀</p>
+              <p>Today it’s not just your special day — it’s mine too 💕♥💐✨<br/>It’s the day when a unique person with a fabulous personality was born 💝🐣💋</p>
+              <p>My love for you is endless 🌏🧸🔐<br/>I’m really thankful and eternally grateful to Allah Almighty for blessing me with you 🌹🌸🧸🙈💋😍❤✨🔐</p>
+              <p>I feel so lucky to have you as my best friend 👩‍❤️‍👩🥰<br/>Our friendship can’t be described in words 😜🧸💋😘✨🫀<br/>Love you, yaara — forever and ever 🥺💋🌹🌸💕💝</p>
+            </div>
+
+            <div class="block urdu">
+"🦋💫🌸  
+میـــــری مسکراہٹــــ کـــا راز ہــــو تــــــم❣  
+خــــاص نہیں بہت خــــاص ہـــــو تـــــم  
+🥀🌸🍂🎂🎁🎊🎉♥🥳  
+
+ســـــالگــــــرہ کـــــی ڈھیــــــروں خــــوشیــــــاں🍫🌸  
+مبــــارک ہــــوں 🌸🍂  
+اللہ پاک آپکــــو ہمیشــــہ  
+خــــوش، آبــــاد، ہنستــــا بستــــا رکھــــے ❤  
+👑 آمیــــن ثــــم آمیــــن یــــارب العــــالمیــــن ♥  
+
+😍❤.♥ ღ ♥_.♥ ღ ♥  
+.♥♥♥_.♥  
+.♥ღHAPPYღ♥  
+_ _.♥BIRTHDAY TO YOU ♥  
+____♥(^^)♥  
+______♥♥  
+___________.ღ ♥ ღ  
+
+Happy Birthday to the most precious person of my life! 🌏😘🧸💐💕🌸✨🔐  
+Never feel alone in life, because I’m always here for you 🫀🫀🫀  
+
+Dear favorite person, you’re still important to me — with or without conversation 🫀🐣🙈😔✨🔐  
+دوستی بھی عشق سے کم نہیں ہوتی ♥🧸✨  
+اگر دوست نبھانے والی ہو تو 😍♥💋  
+
+I love you so much, Bestie — till infinity ♾🔐  
+تم شاید اپنی قیمت نہ جانتی ہو  
+مگر میرے لئے تم بے مثال ہو ❤️"
+            </div>
+
+            <div class="actions">
+              <button id="music" class="btn" type="button">Play Soft Melody 🎵</button>
+              <button id="celebrate" class="btn" type="button">Celebrate ✨</button>
+              <button id="next" class="btn" type="button">Next Surprise ❤️</button>
+            </div>
+            <p class="note">Tip: Hover over the name “Rafia” for sparkles ✨</p>
+        </section>
+
+        <!-- Proposal Scene -->
+        <section id="proposal" class="card hidden" aria-hidden="true">
+          <h2 class="bighead glow">Under a dreamy sky…</h2>
+          <div class="sky">
+            <svg class="scene" viewBox="0 0 600 320" role="img" aria-label="A boy proposing to a girl with hearts floating">
+              <defs>
+                <radialGradient id="sunset" cx="50%" cy="20%" r="80%">
+                  <stop offset="0%" stop-color="#ffd1e8"/>
+                  <stop offset="60%" stop-color="#c7d2fe"/>
+                  <stop offset="100%" stop-color="#b39ddb"/>
+                </radialGradient>
+                <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+                  <feGaussianBlur stdDeviation="6" result="blur"/>
+                  <feMerge>
+                    <feMergeNode in="blur"/>
+                    <feMergeNode in="SourceGraphic"/>
+                  </feMerge>
+                </filter>
+              </defs>
+              <rect x="0" y="0" width="600" height="320" fill="url(#sunset)"/>
+              <!-- ground -->
+              <ellipse cx="300" cy="280" rx="260" ry="28" fill="#2b2d5b" opacity="0.35"/>
+              <!-- boy -->
+              <g transform="translate(210,160)" filter="url(#softGlow)">
+                <circle cx="-20" cy="-40" r="14" fill="#ffe0bd"/>
+                <rect x="-40" y="-28" width="40" height="48" rx="10" fill="#4f46e5"/>
+                <rect x="-56" y="20" width="36" height="12" rx="6" fill="#4f46e5" transform="rotate(-18 -56 20)"/>
+                <rect x="-10" y="20" width="36" height="12" rx="6" fill="#4f46e5" transform="rotate(12 -10 20)"/>
+                <!-- knee pose -->
+                <rect x="-38" y="14" width="20" height="10" rx="5" fill="#1f2937"/>
+                <!-- rose -->
+                <line x1="2" y1="4" x2="26" y2="-18" stroke="#16a34a" stroke-width="3"/>
+                <circle cx="28" cy="-20" r="6" fill="#ef4444"/>
+              </g>
+              <!-- girl -->
+              <g transform="translate(390,140)" filter="url(#softGlow)">
+                <circle cx="0" cy="-42" r="14" fill="#ffe0bd"/>
+                <rect x="-18" y="-28" width="36" height="60" rx="12" fill="#ec4899"/>
+                <rect x="-24" y="28" width="48" height="8" rx="4" fill="#1f2937"/>
+              </g>
+              <!-- hearts -->
+              <g id="svgHearts">
+                <g class="h" transform="translate(300,220)">
+                  <path d="M10 30 C10 15, 30 15, 30 30 C30 45, 10 55, 10 60 C10 55, -10 45, -10 30 C-10 15, 10 15, 10 30 Z" fill="#ff6ea9"/>
+                </g>
+              </g>
+            </svg>
+          </div>
+          <h3 class="bighead glow">Rafia Maryam... Will you be mine forever? 💍❤️</h3>
+          <div class="actions">
+            <button id="playRomance" class="btn" type="button">Play Romantic Tune 🎶</button>
+            <button id="yes" class="btn" type="button">Yes ❤️</button>
+            <button id="thinking" class="btn danger" type="button">Still Thinking 😅</button>
+          </div>
+          <p class="note" id="proposalNote"></p>
+        </section>
+    </main>
+
+    <!-- Floating Sketch Pad -->
+    <button id="sketchToggle" class="fab" title="Sketch Pad 🎨">🎨</button>
+    <div id="sketchPad" class="sketch hidden" aria-hidden="true">
+      <div class="sketch-bar">
+        <span>Sketch Pad — draw hearts and stars 💖</span>
+        <div class="sketch-tools">
+          <button id="clearSketch" class="btn" type="button">Clear</button>
+          <button id="closeSketch" class="btn" type="button">Close</button>
+        </div>
+      </div>
+      <canvas id="pad" width="800" height="480"></canvas>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
